@@ -1,12 +1,2 @@
-﻿Build started 2016-02-29 23:23:54.
-     1>Project "\\storage10.student.bth.se\students\20132\oswb13\dv1542\3DProject\3DProject\3DProject.vcxproj" on node 2 (ClCompile target(s)).
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /ZI /nologo /W3 /WX- /Od /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt Model.cpp
-         Model.cpp
-     1>\\storage10.student.bth.se\students\20132\oswb13\dv1542\3dproject\3dproject\model.cpp(21): error C2660: 'D3DCompileFromFile': function does not take 10 arguments
-     1>\\storage10.student.bth.se\students\20132\oswb13\dv1542\3dproject\3dproject\model.cpp(11): fatal error C1075: the left brace '{' was unmatched at the end of the file
-     1>Done Building Project "\\storage10.student.bth.se\students\20132\oswb13\dv1542\3DProject\3DProject\3DProject.vcxproj" (ClCompile target(s)) -- FAILED.
-
-Build FAILED.
-
-Time Elapsed 00:00:02.51
+﻿  Model.cpp
+  3DProject.vcxproj -> D:\Skolgrejs\DV1542\3dproject\x64\Debug\3DProject.exe

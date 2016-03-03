@@ -2,6 +2,7 @@
 
 #include <Windows.h>
 #include <d3d11.h>
+#include "Model.h"
 //#include <d3dx11.h>
 //#include <d3dx10.h>
 
@@ -43,6 +44,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		MessageBox(0, L"Failed to init scene", L"Error", MB_OK);
 		return 0;
 	}
+	Model* triangle = new Model(device, devcon);
+	delete triangle;
 
 	messageloop();
 	ReleaseObjects();
@@ -186,11 +189,10 @@ void UpdateScene()
 
 void DrawScene()
 {
-	//D3DXCOLOR bgColor(red, green, blue, 1.0f);
-
-	float rgba[4] = { 1.0f, 1.0f, 1.0f, 1.0f };
-
-	devcon->ClearRenderTargetView(renderTargetView, rgba);
+	float background[4] = { 0.0f, 0.0f, 0.0f, 0.0f };
+	devcon->ClearRenderTargetView(renderTargetView, background);
+	
+	devcon->Draw(3, 0);
 
 	SwapChain->Present(0, 0);
 }
